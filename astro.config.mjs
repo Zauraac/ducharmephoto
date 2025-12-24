@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://example.com', // TODO: Update with actual site URL
+    site: 'https://clay-astro-theme.netlify.app',
     integrations: [react(), sitemap()],
 });

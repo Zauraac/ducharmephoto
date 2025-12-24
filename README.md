@@ -31,7 +31,9 @@ A minimalist, image-centric theme for photographers and artists. Originally a Ga
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Getting Started
+
+### Quick Start
 
 ```bash
 # Clone the repository
@@ -44,41 +46,43 @@ npm install && npm run dev
 
 Visit `http://localhost:4321` to see your site in action! 🎉
 
----
+### Detailed Installation
 
-## 📦 Installation
+If you prefer a step-by-step approach:
 
-### 1. Install Dependencies
+1.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-```bash
-npm install
-```
+2.  **Start Development Server**:
+    ```bash
+    npm run dev
+    ```
 
-### 2. Start Development Server
-
-```bash
-npm run dev
-```
-
-Your site will be running at `http://localhost:4321`
-
-### 3. Build for Production
-
-```bash
-npm run build
-```
-
-The output will be in the `dist/` directory, ready for deployment.
+3.  **Build for Production**:
+    ```bash
+    npm run build
+    ```
+    The output will be in the `dist/` directory, ready for deployment.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **[Astro](https://astro.build)** - Static Site Generator
+- **[React](https://react.dev)** - UI Library
 - **[Decap CMS](https://decapcms.org/)** - Headless CMS
 - **[PostCSS](https://postcss.org/)** - CSS Processing
 - **TypeScript** - Type Safety
 - **Markdown/MDX** - Content Management
+
+### Key Dependencies
+
+- **Core**: `astro`, `react`, `react-dom`
+- **Integrations**: `@astrojs/react`, `@astrojs/sitemap`
+- **Styling**: `postcss`, `autoprefixer`
+  - Plugins: `postcss-color-function`, `postcss-custom-properties`, `postcss-easy-import`
 
 ---
 
