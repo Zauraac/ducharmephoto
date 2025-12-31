@@ -24,7 +24,7 @@ A minimalist, image-centric theme for photographers and artists. Originally a Ga
 - 🔄 **Client Router** - Seamless client-side navigation for an SPA-like feel
 - 📱 **Responsive Design** - Mobile-friendly layout with a collapsible menu
 - 🌗 **Dark Mode** - Native dark mode support with toggle switch and persistence
-- 📝 **CMS Ready** - Pre-configured with **Decap CMS** (formerly Netlify CMS)
+- 📝 **CMS Ready** - Optional **Decap CMS** support (disabled by default, see customization section)
 - 🎯 **Scoped CSS** - Modular, component-scoped styles replacing legacy monolithic CSS
 - ✍️ **Typography** - Futura for titles/menu (Small Caps) and EB Garamond for body
 - 📚 **Content Collections** - Type-safe Markdown content management
@@ -71,16 +71,15 @@ If you prefer a step-by-step approach:
 ## 🛠️ Tech Stack
 
 - **[Astro](https://astro.build)** - Static Site Generator
-- **[React](https://react.dev)** - UI Library
-- **[Decap CMS](https://decapcms.org/)** - Headless CMS
+- **[Decap CMS](https://decapcms.org/)** - Headless CMS (optional, disabled by default)
 - **[PostCSS](https://postcss.org/)** - CSS Processing
 - **TypeScript** - Type Safety
 - **Markdown/MDX** - Content Management
 
 ### Key Dependencies
 
-- **Core**: `astro`, `react`, `react-dom`
-- **Integrations**: `@astrojs/react`, `@astrojs/sitemap`
+- **Core**: `astro`
+- **Integrations**: `@astrojs/sitemap`
 - **Styling**: `postcss`, `autoprefixer`
   - Plugins: `postcss-color-function`, `postcss-custom-properties`, `postcss-easy-import`
 
@@ -133,8 +132,38 @@ Edit `src/styles/vars.css` to update CSS variables for colors, fonts, and breakp
 
 ### Content Management
 
-- **Option 1**: Add markdown files directly to `src/content/` folders
-- **Option 2**: Use the Admin panel at `/admin` (requires local backend or Netlify deployment)
+#### Direct Editing (Recommended)
+
+Add or edit markdown files directly in the `src/content/` folders:
+- `src/content/news/` - Blog posts/news items
+- `src/content/work/` - Portfolio work items
+- `src/content/sold/` - Exhibition/sold items
+- `src/content/pages/` - Static pages (bio, contact, etc.)
+
+#### Decap CMS (Optional)
+
+> **⚠️ Note**: The Decap CMS configuration is **disabled by default** (`public/admin/config.yml.disabled`) to ensure smooth deployments. Netlify Identity (required for the CMS) is now deprecated by Netlify.
+
+**For showcase/demo purposes**: The CMS is not needed. Edit content files directly in your repository.
+
+**To enable the CMS for production use**:
+
+1. Choose a backend option:
+   - **Git Gateway** (deprecated but functional): Requires Netlify Identity setup
+   - **GitHub/GitLab OAuth**: Direct repository authentication
+   - **Alternative**: Consider modern headless CMS solutions like Sanity, Contentful, or Tina CMS
+
+2. Rename the config file:
+   ```bash
+   mv public/admin/config.yml.disabled public/admin/config.yml
+   ```
+
+3. Update the backend configuration in `public/admin/config.yml` based on your chosen authentication method
+
+4. For Git Gateway (if using despite deprecation):
+   - Enable Netlify Identity in your site settings
+   - Enable Git Gateway under Identity → Services
+   - Note: Netlify recommends migrating to Auth0 or other solutions
 
 ### Navigation
 
