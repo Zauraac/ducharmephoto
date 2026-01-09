@@ -1,72 +1,13 @@
 # 🏺 Clay Theme for Astro
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/098d9ba5-fd1a-4c6b-83c1-0b70fd7e017c/deploy-status)](https://app.netlify.com/projects/clay-astro-theme/deploys)
-[![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-orange?style=flat-square&logo=astro&logoColor=white)](https://astro.build)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-A minimalist, image-centric theme for photographers and artists. Originally a Gatsby theme, now fully ported to **Astro** for superior performance and modern development experience.
+
+
+A minimalist, image-centric theme for [ducharmephoto.com](https://ducharmephoto.com). Originally a Gatsby theme, now fully ported to **Astro** for superior performance and modern development experience.
 
 > **Note**: This theme is a modern Astro port of the beautiful [Clay Theme](https://github.com/lilxyzz/clay-theme) by `lilxyzz`.
 
-<p align="center">
-  <img src="public/img/clay_astro_light.png" width="48%" alt="Light Mode" style="border-radius: 10px; border: 1px solid #ddd;">
-  <img src="public/img/clay_astro_dark.png" width="48%" alt="Dark Mode" style="border-radius: 10px; border: 1px solid #333;">
-</p>
-
-📺 Check out the [Live Demo](https://clay-astro-theme.netlify.app) or view on the [Astro Themes Portal](https://astro.build/themes/details/clay/)
-
----
-
-## ✨ Features
-
-- ⚡ **Astro-Powered** - Blazing fast static site generation with zero-JS output by default
-- 🎨 **Beautiful Design** - Minimalist and image-centric layout perfect for portfolios
-- 🔄 **Client Router** - Seamless client-side navigation for an SPA-like feel
-- 📱 **Responsive Design** - Mobile-friendly layout with a collapsible menu
-- 🌗 **Dark Mode** - Native dark mode support with toggle switch and persistence
-- 📝 **CMS Ready** - Optional **Decap CMS** support (disabled by default, see customization section)
-- 🎯 **Scoped CSS** - Modular, component-scoped styles replacing legacy monolithic CSS
-- ✍️ **Typography** - Futura for titles/menu (Small Caps) and EB Garamond for body
-- 📚 **Content Collections** - Type-safe Markdown content management
-
----
-
-## 🚀 Getting Started
-
-### Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/clay-astro-theme.git
-cd clay-astro-theme
-
-# Install dependencies and start dev server
-npm install && npm run dev
-```
-
-Visit `http://localhost:4321` to see your site in action! 🎉
-
-### Detailed Installation
-
-If you prefer a step-by-step approach:
-
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
-
-2.  **Start Development Server**:
-    ```bash
-    npm run dev
-    ```
-
-3.  **Build for Production**:
-    ```bash
-    npm run build
-    ```
-    The output will be in the `dist/` directory, ready for deployment.
-
----
 
 ## 🛠️ Tech Stack
 
